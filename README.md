@@ -1,9 +1,8 @@
 # Running Jenkins in Docker
 
 ## Running jenkins with docker from host
-```
-docker run --name jenkins-docker -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock uhdang/jenkins-docker
-```
+
+- Run run.sh
 
 
 
