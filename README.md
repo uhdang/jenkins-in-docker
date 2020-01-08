@@ -1,3 +1,16 @@
+# Initial Setup
+
+Using makefile
+
+1. Create docker network
+2. Build jenkins + nginx image
+3. Run jenkins + nginx
+
+
+
+
+
+
 # Running Jenkins in Docker
 
 * If docker image is not uploaded to docker hub, one needs to build an image and upload it to docker hub
