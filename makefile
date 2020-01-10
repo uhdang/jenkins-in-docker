@@ -1,6 +1,10 @@
-# Create Docker Network
+# Create Docker Network - network-one
 create-network-one:
 	@docker network create network-one
+
+# Create Docker Network - network-app
+create-network-app:
+	@docker network create network-app
 
 # Build Jenkins Image
 build-jenkins:
