@@ -13,9 +13,11 @@ B. Install Make
     1) `sudo apt install make`
     
 C. Add jenkins to docker group
-    - List all users `getend passwd`
-    - Create a user Jenkins `useradd jenkins`
-    - Add jenkins to docker group `sudo usermod -aG docker jenkins`
+    
+    1) Create a user Jenkins `useradd jenkins`
+    2) Add jenkins to docker group `sudo usermod -aG docker jenkins`
+    
+    * List all users `getend passwd`
 
 D. Container setup using makefile
 
