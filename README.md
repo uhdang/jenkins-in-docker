@@ -24,6 +24,8 @@ D. Container setup using makefile
     1) Create docker network - `make create-network-one`
     2) Build jenkins + nginx image
     3) Run jenkins + nginx
+    
+E. Add Credentials to Jenkins (dockerhub credential)
 
 
 
