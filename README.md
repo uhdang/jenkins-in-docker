@@ -1,10 +1,14 @@
 # Initial Setup
 
-Using makefile
+A. Install Docker + Make
+    `sudo snap install docker` + `sudo apt install make`
+    * docker command without *sudo*: refer to Docker.md from docs
 
-1. Create docker network
-2. Build jenkins + nginx image
-3. Run jenkins + nginx
+B. Container setup using makefile
+
+    1) Create docker network - `make create-network-one`
+    2) Build jenkins + nginx image
+    3) Run jenkins + nginx
 
 
 
