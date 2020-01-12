@@ -16,6 +16,7 @@ C. Add jenkins to docker group
     
     1) Create a user Jenkins `useradd jenkins`
     2) Add jenkins to docker group `sudo usermod -aG docker jenkins`
+    3) Grant permission `chmod 777 /var/run/docker.sock`
     
     * List all users `getend passwd`
 
