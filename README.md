@@ -1,6 +1,10 @@
 # Initial Setup
 
-A. Setup Docker
+A. Clone Git 
+
+    `git clone https://github.com/uhdang/jenkins-in-docker.git`
+
+B. Setup Docker
 
     1) Install Docker `sudo snap install docker`
     2) Create docker group `groupadd docker`
@@ -8,27 +12,28 @@ A. Setup Docker
     
     * docker command without *sudo*: refer to Docker.md from docs
 
-B. Install Make
+C. Install Make
 
     1) `sudo apt install make`
     
-C. Add jenkins to docker group
+D. Add jenkins to docker group
     
     1) Create a user Jenkins `useradd jenkins`
     2) Add jenkins to docker group `sudo usermod -aG docker jenkins`
     3) Grant permission `chmod 777 /var/run/docker.sock`
     
     * List all users `getend passwd`
-
-D. Container setup using makefile
+    ** Reboot to register users to group
+    
+E. Container setup using makefile
 
     1) Create docker network - `make create-network-one`
     2) Build jenkins + nginx image
     3) Run jenkins + nginx
     
-E. Add Credentials to Jenkins (dockerhub credential)
+F. Add Credentials to Jenkins (dockerhub credential)
 
-
+G. Create pipeline for backend and frontend
 
 
 
