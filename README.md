@@ -36,7 +36,10 @@ F. Add Credentials to Jenkins (dockerhub credential)
 G. Create pipeline for backend and frontend
 
 
+# TODO
 
+- Run database
+- nginx for frontend and backend containers
 
 # Running Jenkins in Docker
 
