@@ -9,26 +9,29 @@ B. Setup Docker
     1) Install Docker `sudo snap install docker`
     2) Create docker group `groupadd docker`
     3) Add the user to docker group `sudo usermod -aG docker $USER`
+    4) check for groups $USER is in - groups $USER
     
     * docker command without *sudo*: refer to Docker.md from docs
 
 C. Install Make
 
-    1) `sudo apt install make`
+    1) sudo apt install make
     
 D. Add jenkins to docker group
     
     1) Create a user Jenkins `useradd jenkins`
+        * List all users - `getend passwd`
     2) Add jenkins to docker group `sudo usermod -aG docker jenkins`
     3) Grant permission `chmod 777 /var/run/docker.sock`
     
-    * List all users `getend passwd`
     ** Reboot to register users to group
     
 E. Container setup using makefile
 
-    1) Create docker network - `make create-network-one`
+    1) Create docker network - `make create-network-one` (docker network create [NETWORKNAME])
     2) Build jenkins + nginx image
+        - cd into the folder
+        - docker build -t jenkins ./jenkins
     3) Run jenkins + nginx
     
 F. Add Credentials to Jenkins (dockerhub credential)
